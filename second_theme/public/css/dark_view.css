@@ -1,0 +1,453 @@
+/* color1 : #2E2E30 */
+/* color2 : #464549 */
+/* color3 : #5F5E63 */
+/* color4 : #69686D */
+
+.navbar {
+    background-color: #414141;
+    padding: 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.navbar-brand.navbar-home {
+    background-color: #69686D;
+    border-radius: 5px;
+}
+
+.navbar-brand img {
+    /* content: url("/assets/my_theme/images/custom_logo2.png"); */
+    width: 100%;
+
+}
+
+.navbar .container {
+    padding: 0;
+    margin: 0 4%;
+}
+
+/* breadcrumbs Path */
+#navbar-breadcrumbs {
+    display: inline-block;
+    min-width: 35% !important;
+    max-width: fit-content;
+    /* background-color: green !important; */
+}
+
+#navbar-breadcrumbs li a {
+    color: #fff !important;
+    font-size: smaller;
+}
+
+.toggle-mode-btn {
+    border: none;
+    background-color: unset;
+    border-radius: 5px;
+    /* box-shadow: 2px 2px 2px lightgrey; */
+
+}
+.toggle-mode-btn:hover {
+    box-shadow: 0 0 2px lightgrey;
+}
+
+
+/* search */
+.navbar .container .form-inline {
+    /* display: inline-block; */
+}
+
+.navbar .container .form-inline input {
+    min-width: 30% !important;
+    max-width: 120% !important;
+    padding: 15px 30px 15px 30px;
+    background-color: darkgray !important;
+    font-style: #fff;
+}
+
+.navbar .container .form-inline input::placeholder {
+    color: #5F5E63;
+}
+
+.navbar .container .form-inline svg {
+    stroke: black !important;
+}
+
+.search-bar .awesomplete input {
+    font-size: small !important;
+}
+
+/* search list */
+.search-bar .awesomplete ul {
+    min-width: 100% !important;
+    max-width: 120% !important;
+}
+
+/* search list */
+.search-bar .awesomplete ul {
+    background-color: #808082 !important;
+    margin-bottom: 4px !important;
+}
+
+.navbar-nav li button {
+    color: #fff;
+    /* font-weight: bolder; */
+}
+
+/* Make all navbar icons white */
+.navbar-nav svg {
+    fill: #fff !important;
+    stroke: #fff !important;
+}
+
+/* Also ensure <use> elements inherit the color */
+.navbar-nav svg use {
+    fill: #fff !important;
+    stroke: #fff !important;
+}
+
+/* === DROPDOWN CONTAINER === */
+.dropdown-notifications .dropdown-menu {
+    background-color: #5F5E63 !important;
+    color: #ffffff !important;
+    border: 1px solid #2c2c2c !important;
+}
+
+/* === HEADER AREA === */
+.dropdown-notifications .notification-list-header {
+    background-color: #5F5E63 !important;
+    border-bottom: 1px solid #333 !important;
+}
+
+/* === TABS (Notifications / Events / What's New) === */
+.dropdown-notifications .notification-item-tabs .notifications-category {
+    color: #bbb !important;
+}
+
+.dropdown-notifications .notification-item-tabs .notifications-category.active {
+    color: #fff !important;
+    border-bottom: 2px solid #4da3ff !important;
+}
+
+/* === BODY PANELS === */
+.dropdown-notifications .notification-list-body {
+    background-color: #5F5E63 !important;
+}
+
+/* === EMPTY STATE TEXT === */
+.dropdown-notifications .notification-null-state .title,
+.dropdown-notifications .notification-null-state .subtitle {
+    color: #ccc !important;
+}
+
+/* === SETTINGS & MARK READ ICONS HOVER === */
+.dropdown-notifications .header-actions span:hover svg {
+    fill: #4da3ff !important;
+    stroke: #4da3ff !important;
+}
+
+/* === REMOVE LIGHT SHADOW === */
+.dropdown-notifications .dropdown-menu {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Help and user avatar dropdown-menu  */
+.navbar .container .dropdown-menu {
+    padding: 10px 0;
+    background-color: #5F5E63;
+    color: #fff;
+}
+
+.dropdown-menu.notifications-list.dropdown-menu-right.show .header-items ul li {
+    color: #fff;
+}
+
+.dropdown-menu.notifications-list.dropdown-menu-right.show .header-items ul .active {
+    color: black;
+}
+
+.navbar .container .dropdown-menu a,
+.navbar .container .dropdown-menu button {
+    /* border-radius: 0; */
+    margin: 0;
+    padding: 10px !important;
+    color: #fff;
+    font-weight: normal !important;
+    transition-property: padding, font-weight, background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.navbar .container .dropdown-menu a:hover,
+.navbar .container .dropdown-menu button:hover {
+    font-weight: bolder !important;
+    padding: 10px 10px 10px 20px !important;
+    background-color: gray;
+}
+
+/* ==================================== End Navbar ======================================== */
+
+
+/* ==================================== Start sidebar ======================================== */
+
+/* ===============================
+   Hide custom sidebars while loading
+   =============================== */
+
+body.app-loading #side-menu-perent,
+body.app-loading #sub-menu {
+    display: none !important;
+}
+
+/* Optional: avoid layout jump */
+body.app-loading .main-section {
+    visibility: hidden;
+}
+
+#body {
+    /* min-height: 120vh; */
+    display: flex;
+    /* justify-content: space-between; */
+    position: relative;
+
+}
+
+/* hide system sidebar */
+.layout-side-section,
+.sidebar-toggle-btn {
+    display: none !important;
+}
+
+#page-title {
+    font-size: small;
+    color: #fff;
+}
+
+
+
+
+/* ======================================= */
+/* 1) side-menu-perent */
+
+#side-menu-perent {
+    min-height: 95vh !important;
+    max-height: 100% !important;
+    /* border-right: 1px solid lightgray; */
+    /* border-left: 1px solid lightgray; */
+    /* border-radius: 5px; */
+    background-color: #414141;
+    color: black;
+    position: relative;
+
+}
+
+
+#side-menu-component .side-menu-item svg,
+#side-menu-component .side-menu-item svg use {
+    fill: #ffffff !important;
+    stroke: #fff !important;
+}
+
+#side-menu-component .side-menu-item svg {
+    background-color: #5F5E63;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========== start sub menu ================ */
+#sub-menu {
+    background-color: #464646;
+
+}
+
+
+
+
+/* menu and shortcut btn */
+.sub-tab-btn {
+    background-color: #656566;
+    color: #fff;
+    transition: all 0.2s ease;
+    box-shadow: 4px 2px 5px #000000;
+}
+
+.sub-tab-btn.active {
+    background-color: #2E2E30;
+    padding: 6px 0;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 300;
+    box-shadow: none
+}
+
+.sub-tab-btn.active::before {
+    content: "✓";
+    margin-right: 4px;
+    transition: transform 0.3s ease;
+}
+
+/* sub menu item */
+.sub-menu-item span {
+    color: #fff;
+}
+
+.sub-menu-item span svg use {
+    fill: #fff !important;
+    stroke: #fff !important;
+}
+
+.sub-menu-item:hover>span {
+    text-decoration: underline;
+
+    color: black;
+    /* padding: 5px 0 5px 15px; */
+}
+
+/* ============================= start accordion ============================ */
+/* sub menu accordion */
+.accordion-header {
+    font-weight: 400;
+    width: 180px;
+    font-size: 10px;
+    color: #fff;
+    padding: 5px 0 5px 6px;
+    margin-bottom: 6px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.accordion-header:hover {
+    color: #000;
+    padding-left: 12px;
+    transition: padding-left 0.2s ease;
+}
+
+.accordion-header::before {
+    content: "▸";
+    display: inline-block;
+    margin-right: 6px;
+    transition: transform 0.3s ease;
+}
+
+.accordion-header.open::before {
+    transform: rotate(90deg);
+}
+
+/* accordion list content while close */
+.accordion-body {
+    padding-left: 2px;
+    width: 180px;
+    max-height: 0;
+    margin: 5px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+/* accordion list content while open */
+.accordion-header.open {
+    font-weight: 600;
+    color: black;
+    background-color: #5F5E63;
+}
+
+
+/* link in accordion */
+.sub-menu-link {
+    padding: 0;
+    color: #fff;
+    cursor: pointer;
+    list-style: circle inside;
+    font-size: 10px;
+    margin: 4px 0;
+    max-width: 100%;
+}
+
+.sub-menu-link:hover {
+    text-decoration: underline;
+    color: black;
+    /* background-color: green; */
+    padding-left: 2px;
+
+}
+
+/* ============================= End Accordion ============================ */
+
+
+
+/* ==================================== End sidebar ======================================== */
+
+
+/* ==================================== start Workspace ==================================== */
+body.full-width-workspace .content.page-container,
+body.full-width-workspace .page-container {
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+
+body.boxed-workspace .content.page-container,
+body.boxed-workspace .page-container {
+    width: 80% !important;
+    margin: 0 auto !important;
+}
+
+
+
+
+/* ==================================== End Workspace ==================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media */
+
+
+@media (min-width: 768px) {
+    body.full-width .container {
+        width: 97%;
+        max-width: 100%;
+    }
+}
+
+
+/* 
+@media (min-width: 1100px) {
+
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 100%;
+    }
+
+    .navbar .navbar-expand {
+        max-width: 90% !important;
+    }
+
+} */

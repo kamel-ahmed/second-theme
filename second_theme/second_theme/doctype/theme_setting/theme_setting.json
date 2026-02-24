@@ -1,0 +1,235 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-20 14:52:48.907577",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "theme_layout_tab",
+  "dark_view",
+  "hide_language_icon",
+  "show_help_icon",
+  "theme_color",
+  "theme_logo",
+  "favicon",
+  "loading_image",
+  "side_menu_tab",
+  "default_sidebar",
+  "section_break_kicf",
+  "column_break_zpjv",
+  "open_workspace_on_mobile_menu",
+  "show_icon_lable",
+  "hide_icon_tooltip",
+  "always_close_sub_menu",
+  "menu_opening_type",
+  "menu_icons",
+  "login_page_tab",
+  "login_logo",
+  "is_slideshow",
+  "login_background",
+  "background_list",
+  "layout_tab",
+  "apply_sidebar",
+  "apply_sub_sidebar",
+  "apply_navbar",
+  "apply_workspace",
+  "full_width_workspace"
+ ],
+ "fields": [
+  {
+   "fieldname": "theme_layout_tab",
+   "fieldtype": "Tab Break",
+   "label": "Theme Layout"
+  },
+  {
+   "default": "0",
+   "fieldname": "dark_view",
+   "fieldtype": "Check",
+   "label": "Dark View"
+  },
+  {
+   "default": "0",
+   "fieldname": "hide_language_icon",
+   "fieldtype": "Check",
+   "label": "Hide Language Icon",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "show_help_icon",
+   "fieldtype": "Check",
+   "label": "Show Help Icon"
+  },
+  {
+   "fieldname": "theme_logo",
+   "fieldtype": "Attach Image",
+   "label": "Theme Logo"
+  },
+  {
+   "fieldname": "favicon",
+   "fieldtype": "Attach Image",
+   "label": "Favicon"
+  },
+  {
+   "fieldname": "loading_image",
+   "fieldtype": "Attach Image",
+   "label": "Loading Image"
+  },
+  {
+   "fieldname": "side_menu_tab",
+   "fieldtype": "Tab Break",
+   "label": "Side Menu"
+  },
+  {
+   "fieldname": "login_page_tab",
+   "fieldtype": "Tab Break",
+   "label": "Login Page"
+  },
+  {
+   "fieldname": "layout_tab",
+   "fieldtype": "Tab Break",
+   "label": "Layout"
+  },
+  {
+   "default": "0",
+   "fieldname": "open_workspace_on_mobile_menu",
+   "fieldtype": "Check",
+   "label": "Open Workspace On Mobile Menu",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "hide_icon_tooltip",
+   "fieldtype": "Check",
+   "label": "Hide Icon Tooltip"
+  },
+  {
+   "default": "0",
+   "fieldname": "always_close_sub_menu",
+   "fieldtype": "Check",
+   "label": "Always Close Sub Menu"
+  },
+  {
+   "default": "Workspace",
+   "fieldname": "menu_opening_type",
+   "fieldtype": "Select",
+   "label": "Menu Opening Type",
+   "options": "Workspace\nDashboard"
+  },
+  {
+   "default": "1",
+   "fieldname": "default_sidebar",
+   "fieldtype": "Check",
+   "label": "Default Sidebar",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "show_icon_lable",
+   "fieldtype": "Check",
+   "label": "Show Icon Lable"
+  },
+  {
+   "fieldname": "theme_color",
+   "fieldtype": "Select",
+   "label": "Theme Color",
+   "options": "Default\nBlue\nGreen\nYellow\nRed",
+   "placeholder": "Select Color"
+  },
+  {
+   "fieldname": "section_break_kicf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": " eval:doc.default_sidebar=0",
+   "fieldname": "column_break_zpjv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "apply_navbar",
+   "fieldtype": "Check",
+   "label": "Apply Navbar"
+  },
+  {
+   "default": "0",
+   "fieldname": "apply_sub_sidebar",
+   "fieldtype": "Check",
+   "label": "Apply Sub Sidebar"
+  },
+  {
+   "default": "0",
+   "fieldname": "apply_workspace",
+   "fieldtype": "Check",
+   "label": "Apply Workspace"
+  },
+  {
+   "default": "0",
+   "fieldname": "apply_sidebar",
+   "fieldtype": "Check",
+   "label": "Apply Sidebar"
+  },
+  {
+   "fieldname": "login_logo",
+   "fieldtype": "Attach Image",
+   "label": "Login Logo"
+  },
+  {
+   "depends_on": "eval:doc.is_slideshow === 0",
+   "fieldname": "login_background",
+   "fieldtype": "Attach Image",
+   "label": "Login background"
+  },
+  {
+   "depends_on": "eval:doc.is_slideshow === 1",
+   "fieldname": "background_list",
+   "fieldtype": "Table",
+   "label": "Background List",
+   "options": "Slide Show"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_slideshow",
+   "fieldtype": "Check",
+   "label": "Is Slideshow!"
+  },
+  {
+   "fieldname": "menu_icons",
+   "fieldtype": "Table",
+   "label": "Menu Icons",
+   "options": "Sidebar Icon Change"
+  },
+  {
+   "default": "0",
+   "fieldname": "full_width_workspace",
+   "fieldtype": "Check",
+   "label": "Full Width Workspace"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-02-16 15:01:30.359056",
+ "modified_by": "Administrator",
+ "module": "Second Theme",
+ "name": "Theme Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,133 @@
+/* to hide navbar */
+.navbar {
+    visibility: hidden;
+    /* display: none; */
+}
+
+.page_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.new-logo {
+    width: 80%;
+}
+
+.for-login {
+    /* border: 1px solid black; */
+    min-width: 800px;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 10px 10px 50px;
+
+}
+
+.for-login .login-img {
+    /* border: 1px solid black; */
+    width: 40%;
+    height: 450px;
+}
+
+.for-login .login-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* box-shadow: 5px 5px 5px; */
+    border-radius: 20px;
+    opacity: 0.7;
+
+}
+
+.for-login .page-card {
+    width: 50%;
+    max-width: none;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.009);
+    border: none;
+    /* background-color: white; */
+    /* box-shadow:inset 5px 5px 20px 5px; */
+}
+
+.for-login .page-card form {
+    max-width: 420px;
+}
+
+.for-login div h3 {
+    margin: 0 0 20px 0;
+    justify-items: center;
+}
+
+/* show and forget password text */
+.for-login .page-card .page-card-body .forgot-password-message>*,
+.text-muted {
+    color: black !important;
+}
+
+/* input fields */
+.for-login .page-card .page-card-body .email-field input,
+.for-login .page-card .page-card-body .password-field input {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 18px 0 18px 30px;
+
+}
+
+.for-login .page-card .page-card-body .email-field input:focus,
+.for-login .page-card .page-card-body .password-field input:focus {
+    padding: 18px 0 18px 40px;
+    border: 2px solid darkblue;
+    box-shadow: 2px 2px 10px;
+    transition: padding 0.2s ease-in, box-shadow 0.2s ease-in, border 0.2s ease-in
+}
+
+.for-login .page-card .page-card-body .field-icon {
+    top: 12px;
+}
+
+.for-login .page-card .page-card-body .password-field .toggle-password {
+    top: 12px;
+}
+
+.btn:not(.btn-md):not(.btn-lg) {
+    background-color: darkblue;
+    padding: 8px;
+}
+
+
+@media (min-width: 0) and (max-width: 900px) {
+
+    .navbar {
+        display: none;
+    }
+
+    .for-login {
+        display: block;
+        min-width: 200px;
+        max-height: 400px
+            /* Change to a flex layout on larger screens */
+    }
+
+    .login-content.page-card {
+        font-size: x-small;
+        padding: 0;
+        width: 100%;
+    }
+
+    .for-login .page-card .page-card-body .email-field input:focus,
+    .for-login .page-card .page-card-body .password-field input:focus {
+        padding: 18px 0 18px 30px;
+        border: 2px solid darkblue;
+        /* box-shadow: 2px 2px 10px; */
+        /* transition: padding 0.2s ease-in, box-shadow 0.2s ease-in, border 0.2s ease-in */
+    }
+
+    .login-img {
+        display: none;
+    }
+
+}
